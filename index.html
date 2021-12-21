@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <script src="https://use.fontawesome.com/1ba076b651.js"></script>
+  </head>
+  <body>
+   <div class="wrapper">
+     <header>
+       <h1>ToDo List</h1>
+     </header>
+     <section>
+      <form>
+        <input type="text" placeholder="create task" id='addTask'>
+        <button type="submit" id="submitBtn">add</button>
+      </form>
+      <div>
+       
+        <input type="text" placeholder="filter task" id='filter'>
+        <h2>Tasks:</h2>
+        <ul id="tasks">
+        </ul>
+        <button type="submit" id="clearBtn">clear tasks</button>
+      </div>
+     </section>
+     <footer>You have <span id="taskCount">0</span> tasks</footer>
+   </div>
+
+   <div class="modal-bg">
+    <div class="modal">
+      <div class="modal-text"></div>
+      <button class="close-btn">close</button>
+    </div>
+  </div>
+   
+    <script src="app.js"></script>
+  </body>
+</html>
